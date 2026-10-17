@@ -1,0 +1,27 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "A program to teach people a lesson in why they shouldn't be opening random executable files",
+  "keywords": [
+    "What"
+  ],
+  "homepage": "https://github.com/SchmidtyPlays/Hackathon#readme",
+  "bugs": {
+    "url": "https://github.com/SchmidtyPlays/Hackathon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchmidtyPlays/Hackathon.git"
+  },
+  "license": "ISC",
+  "author": "Payton & Keegan",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "npm run start"
+  },
+  "devDependencies": {
+    "electron": "^44.9.0"
+  }
+}
