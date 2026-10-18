@@ -22,10 +22,11 @@ html, body {
 }
 
 h2 {
-    font-size: x-large;
+    font-size: xxx-large;
     margin-top:  25px;
     margin-bottom: 5px;
-    line-height:18px;
+    line-height: 18px;
+    text-align: center;
 }
 
 .outerBorder {
@@ -46,11 +47,11 @@ h2 {
 .innerBorder {
     margin-left: 10px;
     padding: 20px;
-    align-items: start;
     overflow-y: scroll;
     transition: all 0.5s ease;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    margin: auto;
 }
 
 h1 {
@@ -70,4 +71,24 @@ a {
 
 section {
     margin-bottom: 25px;
+}
+
+h3 {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+#tryAgain {
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    border: 2px solid rgb(219, 0, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 5px black);
+    position: absolute;
+    left: 44%;
 }

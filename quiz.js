@@ -8,7 +8,5 @@ function onSubmit() {
         score += 1;
     }
 
-    localStorage.setItem("score", score);
-
-    location.href = "finalPage.html"
+    window.location.href = `finalPage.html?score=${encodeURIComponent(score)}`
 }
