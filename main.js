@@ -13,7 +13,6 @@ function createWindow() {
     },
   });
   win.loadFile('index.html');
-  win.webContents.openDevTools()
 }
 
 // Listen for the close request from the website
