@@ -20,13 +20,21 @@
       <img id="leftSkull" class="skulls" src="Images/skull.gif" alt="Spinning skull">
       <img id="rightSkull" class="skulls" src="Images/skull.gif" alt="Spinning skull">
 
+      <svg id="close-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" role="button">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+
       <div id="innerDiv">
         <h1>You've been hacked!</h1>
-        <h2>All of your files have been encrypted and you will not be able to unencrypt them without paying the ransom</h2>
+        <h2>All of your files have been encrypted and you will not be able to decrypt them without paying the ransom</h2>
         <p>Ransom: 1 online course</p>
       </div>
+      
+      <a href="content.html"><button id="continueButton">Continue</button></a>
 
       <p id="legal">For legal and ethical reasons, your files have not actually been encrypted and there is no obligation for you to complete this course.</p>
     </main>
+
+    <script src="close.js"></script>
   </body>
 </html>
