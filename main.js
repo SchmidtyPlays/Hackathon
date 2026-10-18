@@ -8,17 +8,16 @@ function createWindow() {
     fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      contextIsolation: true,   // keep these defaults
+      contextIsolation: true,
       nodeIntegration: false,
+      devTools: false
     },
   });
   win.loadFile('index.html');
-  win.webContents.openDevTools()
 }
 
-// Listen for the close request from the website
 ipcMain.on('window:close', () => {
-  if (win) win.close();   // or app.quit() to exit the whole app
+  if (win) win.close();
 });
 
 app.whenReady().then(createWindow);
