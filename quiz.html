@@ -15,29 +15,31 @@
 
             <section>
                 <h2>What was <u>not</u> one of the dangers of malicious links?</h2>
-                <input name="mal-links" id="ransomware" value="Ransomware" type="radio">
-                <label for="ransomware">Ransomware</label><br>
-                <input name="mal-links" id="fin-loss" value="Financial Loss" type="radio">
-                <label for="fin-loss">Financial Loss</label><br>
-                <input name="mal-links" id="hugs-kiss" value="Hugs and Kisses from Momma Bear" type="radio">
-                <label for="hugs-kiss">Hugs and Kisses from Momma Bear</label><br>
-                <input name="mal-links" id="net-data" value="Network & Data Breaches" type="radio">
-                <label for="net-data">Network & Data Breaches</label>
+                <input name="mal-links" id="a1" value="1" type="radio">
+                <label for="a1">Ransomware</label><br>
+                <input name="mal-links" id="a2" value="2" type="radio">
+                <label for="a2">Financial Loss</label><br>
+                <input name="mal-links" id="a3" value="3" type="radio">
+                <label for="a3">Hugs and Kisses from Momma Bear</label><br>
+                <input name="mal-links" id="a4" value="4" type="radio">
+                <label for="a4">Network & Data Breaches</label>
             </section>
 
             <section>
-                <h2>?</h2>
-                <input name="urgency" id="ransomware" value="Ransomware" type="radio">
-                <label for="ransomware">Unusual Attach</label><br>
-                <input name="urgency" id="fin-loss" value="Financial Loss" type="radio">
-                <label for="fin-loss">Suspicious Sender Address</label><br>
-                <input name="urgency" id="hugs-kiss" value="Hugs and Kisses from Momma Bear" type="radio">
-                <label for="hugs-kiss">Urgent or threatening Language</label><br>
-                <input name="urgency" id="net-data" value="Network & Data Breaches" type="radio">
-                <label for="net-data">Network & Data Breaches</label>
+                <h2>Which one of these emails is the most trustworthy?</h2>
+                <input name="urgency" id="b1" value="1" type="radio">
+                <label for="b1">no-reply@google.com</label><br>
+                <input name="urgency" id="b2" value="2" type="radio">
+                <label for="b2">no-reply@paypai.com</label><br>
+                <input name="urgency" id="b3" value="3" type="radio">
+                <label for="b3">terry@notascam.org</label><br>
+                <input name="urgency" id="b4" value="4" type="radio">
+                <label for="b4">n0-r3ply@mlcros0ft.com</label>
             </section>
             
+            <button id="submit" onclick="onSubmit()">Submit</button>
         </div>
     </main>
+    <script src="quiz.js"></script>
 </body>
 </html>

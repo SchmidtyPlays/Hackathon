@@ -71,3 +71,15 @@ a {
 section {
     margin-bottom: 25px;
 }
+
+.arrow {
+    width: 40px
+}
+
+#leftArrow {
+    float: left;
+}
+
+#rightArrow {
+    float: right;
+}
