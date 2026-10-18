@@ -1,18 +1,28 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron');
+const path = require('path');
 
-const createWindow = () => {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600
-  })
+let win;
 
-  win.loadFile('index.html')
+function createWindow() {
+  win = new BrowserWindow({
+    fullscreen: true,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      contextIsolation: true,   // keep these defaults
+      nodeIntegration: false,
+    },
+  });
+  win.loadFile('index.html');
+  win.webContents.openDevTools()
 }
 
-app.whenReady().then(() => {
-  createWindow()
-})
+// Listen for the close request from the website
+ipcMain.on('window:close', () => {
+  if (win) win.close();   // or app.quit() to exit the whole app
+});
+
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit()
-})
+  app.quit();
+});
