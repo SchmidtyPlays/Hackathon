@@ -63,7 +63,7 @@ p {
     filter: drop-shadow(1px 1px 5px black);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1900px) {
     #innerDiv {
         width: 1000px;
     }
